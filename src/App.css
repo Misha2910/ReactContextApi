@@ -1,42 +1,59 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+
+.header {
+  display: block;
   text-align: center;
+  font-size: 30px;
+  margin: 10px 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 80px;
+  margin-top: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav > li {
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav > li:hover {
+  color: turquoise;
 }
 
-.card {
-  padding: 2em;
+/* ----------------------- */
+
+.productContainer {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.read-the-docs {
-  color: #888;
+.products {
+  width: 25%;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.productDesc {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.add {
+  padding: 5px;
+}
+
+.remove {
+  background-color: grey;
+  color: white;
 }
